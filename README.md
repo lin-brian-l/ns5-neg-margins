@@ -1,29 +1,27 @@
-# NativeScript Angular Template
+This repo demos slight differences in negative margins between Android and iOS in Nativescript version 5.1.
 
-This template creates a "Hello, world" NativeScript app using TypeScript and Angular.
+# No negative margins
+Android:
+![AndroidIndex](./screenshots/android-no-neg.png)
 
-You can create a new app that uses this template with either the `--template` option.
+iOS:
+![iOSIndex](./screenshots/ios-no-neg.png)
 
-```
-tns create my-app-name --template tns-template-hello-world-ng
-```
+# Negative Margin on Parent Gridlayout
+Notice that on iOS, the bottom buttons are shifted down instead of being centered like they are without any negative top margin, and that the top orange stack (with height 100) should be hidden.
 
-Or the `--ng` shorthand.
+Android:
+![AndroidIndex](./screenshots/android-neg-top.png)
 
-```
-tns create my-app-name --ng
-```
+iOS:
+![iOSIndex](./screenshots/ios-neg-top.png)
 
-> Note: Both commands will create a new NativeScript app that uses the latest version of this template published to [npm] (https://www.npmjs.com/package/tns-template-hello-world-ng).
 
-If you want to create a new app that uses the source of the template from the `master` branch, you can execute the following:
+# Negative Margin on Middle (Blue) Stacklayout
+This has the same result on both android and iOS.
 
-```
-tns create my-app-name --template https://github.com/NativeScript/template-hello-world-ng.git#master
-```
+Android:
+![AndroidIndex](./screenshots/android-neg-mid.png)
 
-**NB:** Please, have in mind that the master branch may refer to dependencies that are not on NPM yet!
-
-# Issues
-
-Issues related to `template-hello-world-ng` template should be logged in the https://github.com/NativeScript/NativeScript repository.
+iOS:
+![iOSIndex](./screenshots/ios-neg-mid.png)
