@@ -14,9 +14,11 @@ Android:
 ![AndroidNegTop](./screenshots/android-neg-top.png)
 
 iOS (v5.1):
+
 ![iOSNegTop5.1](./screenshots/ios-neg-top.png)
 
 iOS (v4.2):
+
 ![iOSNegTop4.2](./screenshots/ios-neg-top-v4.2.png)
 
 
@@ -27,4 +29,5 @@ Android:
 ![AndroidIndex](./screenshots/android-neg-mid.png)
 
 iOS:
+
 ![iOSIndex](./screenshots/ios-neg-mid.png)
