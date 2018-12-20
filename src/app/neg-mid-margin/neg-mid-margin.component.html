@@ -1,0 +1,38 @@
+<GridLayout 
+    rows="200 * *" 
+    columns="* *" 
+    backgroundColor="black">
+    <StackLayout 
+        row="0" 
+        col="0" colSpan="2"
+        backgroundColor="red"></StackLayout>
+    <Label 
+        row="0" 
+        col="0" colSpan="2"
+        textWrap="true"
+        text="This should be hidden due to negative marginTop on blue stacklayout"
+        verticalAlignment="bottom"></Label>
+    <StackLayout 
+        row="0" 
+        col="0" colSpan="2"
+        backgroundColor="orange" 
+        height="100" 
+        verticalAlignment="top"></StackLayout>
+    <StackLayout 
+        row="1"
+        col="0" colSpan="2"
+        marginTop="-100"
+        backgroundColor="blue">
+        <Label 
+            textWrap="true"
+            text="Blue stacklayout has marginTop=-100"></Label>
+    </StackLayout>
+    <Button 
+        row="2" col="0"
+        text="Top neg margin"
+        (tap)="toTopNegMargin()"></Button>
+    <Button 
+        row="2" col="1"
+        text="No neg margins"
+        (tap)="back()"></Button>
+</GridLayout>
